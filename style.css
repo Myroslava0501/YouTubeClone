@@ -258,3 +258,24 @@ p {
   font-family: var(--font-family);
   font-size: 10px;
 }
+
+@media (max-width: 768px) {
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+}
+@media (min-width: 769px) {
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
